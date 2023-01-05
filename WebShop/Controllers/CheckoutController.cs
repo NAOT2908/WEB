@@ -65,7 +65,7 @@ namespace WebShop.Controllers
             }
             try
             {
-                if (ModelState.IsValid)
+                if (!ModelState.IsValid)
                 {
                     //Khoi tao don hang
                     Order donhang = new Order();
